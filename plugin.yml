@@ -1,0 +1,18 @@
+name: HexaPortal
+version: 1.0
+main: ru.hexatime.hexaportal.HexaPortal
+api-version: '1.21'
+author: HexaTime
+description: Teleports players to set coordinates when they enter the Nether or the End through a portal
+commands:
+  portalset:
+    description: Set where players arrive in the Nether and the End
+    usage: /portalset <nether|end|remove|info|reload>
+    aliases: [hexaportal]
+permissions:
+  hexaportal.admin:
+    description: Use /portalset
+    default: op
+  hexaportal.bypass:
+    description: Use portals normally, without the fixed teleport
+    default: false
